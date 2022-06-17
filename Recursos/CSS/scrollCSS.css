@@ -1,0 +1,120 @@
+.FadeIn{
+  opacity: 0;
+  transition: all 1s;
+}
+.FadeIn7{
+  opacity: .2;
+  transition: all 1s;
+}
+.scale{
+    transform: scale(.8);
+    transition: all 1s;
+}
+.fadeLeft{
+  transform: translate(5vh,0);
+  transition:all 1s;}
+.fadeRight{
+  transform: translate(-5vh,0);
+  transition:all 1s; }
+
+.rotate{
+  transform: rotate(45deg);
+  transition:all 1s;}
+.visible{
+  transform: rotate(0);
+  transform: scale(1);
+  transform: translate(0,0);
+  opacity: 1;
+  transition: all 1s;
+}
+.menuvisible{
+  margin-right: 0;
+  opacity: 1;
+ 
+
+}
+
+
+.swipecont-container{
+background:rgb(255,255,255);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100% ;
+   
+    height: 600px;
+    z-index:4;
+    box-shadow: inset 0 0 60px #00000075;
+    
+}
+.swipecont{
+ display: flex;
+ position: absolute;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ overflow-y: hidden;
+
+} 
+.estiloCont1{  text-align: center;
+      width: 80%;
+  height: 370px;
+background: rgb(47,32,61);
+background: linear-gradient(60deg, rgba(47,32,61,1) 0%, rgba(99,47,124,1) 35%, rgba(152,98,189,1) 100%);
+   margin:0 10%;
+  border-radius: 15px;
+   box-shadow: 0 0 15px #0000007d, inset 0 0 20px rgba(0,0,0,0.267);
+}
+   
+.swipecont h3{
+  color: white;
+  font-size: 32px;
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+
+  padding: 0 30px;
+}
+ .left{
+   transform: scale(1.05);
+opacity: .7;
+   left: -100%;
+   z-index: 4;
+
+}
+.zero{
+  transform: scale(1);
+opacity: 1;
+   left: 0%;
+   z-index: 5;
+
+}
+.right{
+    transform: scale(1.05);
+opacity: .7;
+   left: 100%;
+   z-index: 4;
+ 
+}
+.toleft{
+  
+  transform: scale(1.05);
+  opacity: .7;
+  left: -100%;
+  transition: all 350ms ease;
+}
+.toright{
+  transform: scale(1.05);
+  opacity: .7;
+  left: 100%;
+  transition: all 350ms ease;
+}
+.tozero{
+  transform: scale(1);
+  opacity: 1;
+  left: 0%;
+  transition: all 350ms ease;
+
+}
